@@ -1,2 +1,15 @@
-{{page-title "Signin"}}
-{{outlet}}
+<div class="box">
+<h1>Please Login</h1>
+<form {{on "submit" this.login}}>
+    <label for="username">Username</label>
+    {{!-- <input type="text" name="username" {{on "change" (fn this.update "username")}}> --}}
+    <input type="text" name="username" {{on "change"  this.updateUsername}}>
+    <label for="password">Password</label>
+    {{!-- <input type="password" name="password" {{on "change"(fn this.update "password")}}> --}}
+    <input type="password" name="password" {{on "change" this.updatePassword}}>
+    <input type="submit" value="Login">
+</form>
+{{#if error}}
+<p><strong>{{error}}</strong></p>
+{{/if}}
+</div>
