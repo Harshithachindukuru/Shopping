@@ -18,7 +18,11 @@
     <div class="detail cost">
       <span>Price:</span> {{@product.cost}}
     </div>
-    <button clas="button">Buy Now</button>
+    <button clas="button">
+      <LinkTo @route="product" >
+    Buy Now
+  </LinkTo>
+    </button>
   </div>
 </article>
  {{!-- {{#each @product as |product|}}

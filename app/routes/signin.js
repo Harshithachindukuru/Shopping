@@ -1,9 +1,9 @@
 import Route from '@ember/routing/route';
-// import {inject as service} from '@ember/service';
+import {inject as service} from '@ember/service';
 export default class SigninRoute extends Route {
-    // @service session;
+    @service session;
 
-    // beforeModel(transition) {
-    //   this.get('session').prohibitAuthentication('about');
-    // }
+    beforeModel() {
+      this.get('session').prohibitAuthentication('index');
+    }
 }
