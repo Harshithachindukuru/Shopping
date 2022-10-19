@@ -11,9 +11,18 @@
     </LinkTo>
   </div>
   <div class="sign">
-  <LinkTo @route="signin" class="menu-signin">
+  {{!-- <LinkTo @route="signin" class="menu-signin">
+    Sign in
+  </LinkTo> --}}
+  {{#if session.isAuthenticated}}
+  <LinkTo @route="signin" class="menu-signout" {{on "click" this.logout}}>
+    Sign out
+  </LinkTo>
+  {{else}}
+   <LinkTo @route="signin" class="menu-signin">
     Sign in
   </LinkTo>
+  {{/if}}
   <LinkTo @route="signup" class="menu-signup">
     Sign up
   </LinkTo>
