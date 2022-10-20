@@ -17,6 +17,9 @@ export default function() {
   this.patch('/movies/:id'); 
   this.del('/movies/:id');
   this.get('/products');
+  this.del('/products/:id');
+  this.get('/items');
+  this.del('/items/:id');
   /*
     Shorthand cheatsheet:
 

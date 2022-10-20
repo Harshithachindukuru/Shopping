@@ -12,4 +12,5 @@ Router.map(function () {
   this.route('signin');
   this.route('signup');
   this.route('product');
+  this.route('post');
 });

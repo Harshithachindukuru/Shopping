@@ -16,4 +16,5 @@ export default class IndexRoute extends Route {
     //     return { type, ...attributes };
     //   });
     // }
+    
 }
