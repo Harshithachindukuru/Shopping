@@ -1,5 +1,6 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
+import { action } from '@ember/object';
 export default class ProductRoute extends Route {
     // @service session;
     @service store;
@@ -9,12 +10,14 @@ export default class ProductRoute extends Route {
    async model(){
 // return await this.store.findAll('movie');  
 // return await this.store.findRecord('movie',1);
-let movie=await this.store.createRecord('movie',{
-    title:"movie3",
-    year:2022,
-    rating:5.0
-});
-movie.save();
-return await this.store.findAll('movie');  
+// let movie=await this.store.createRecord('movie',{
+//     title:"movie3",
+//     year:2022,
+//     rating:5.0
+// });
+// movie.save();
+// return await this.store.findAll('movie');  
+
+  return await this.store.findAll('item');
 }
 }
