@@ -20,4 +20,7 @@ export default class ProductRoute extends Route {
 
   return await this.store.findAll('item');
 }
+// async model(params){
+//   return await this.store.findRecord('item',params.id);
+// }
 }

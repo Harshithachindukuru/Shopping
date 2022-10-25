@@ -13,4 +13,5 @@ Router.map(function () {
   this.route('signup');
   this.route('product');
   this.route('post');
+  this.route('edit',{path:'/items/:id/edit'});
 });

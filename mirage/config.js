@@ -11,15 +11,18 @@ export default function() {
   // this.urlPrefix = '';    // make this `http://localhost:8080`, for example, if your API is on a different server
   // this.namespace = 'api';    // make this `/api`, for example, if your API is namespaced
   // this.timing = 400;      // delay for each request, automatically set to 0 during testing
-  this.get('/movies');
-  this.get('/movies/:id');
-  this.post('/movies');
-  this.patch('/movies/:id'); 
-  this.del('/movies/:id');
+  // this.get('/movies');
+  // this.get('/movies/:id');
+  // this.post('/movies');
+  // this.patch('/movies/:id'); 
+  // this.del('/movies/:id');
   this.get('/products');
   this.del('/products/:id');
   this.get('/items');
   this.del('/items/:id');
+  this.post('/items');
+  this.patch('/items/:id'); 
+  this.get('/items/:id');
   /*
     Shorthand cheatsheet:
 

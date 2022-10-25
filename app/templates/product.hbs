@@ -18,7 +18,11 @@
     </div>
      <button  class="button">Buy Now</button>
     <button class="button" {{on "click" (fn this.delete item.id)}}>Delete</button>
-     <button  class="button">Edit</button>
+     <button  class="button">
+      {{#link-to "edit" item.id}}
+      Edit
+      {{/link-to}}
+      </button>
  </div>
 </div>
 {{/each}}
